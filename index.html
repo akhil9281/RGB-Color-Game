@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="colorApp">
+<head>
+    <title>CollPoll Color Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script src="node_modules\angular\angular.js"></script>
+    <script src="node_modules\angular\angular-route.js"></script>
+
+    <script src="angular-script.js"></script>
+</head>
+
+<body>
+    <div ng-controller="colorController">
+
+        <h1>The Great Color Game</h1>
+        <h2><span id="the-color">=>{{theColor}} </span></h2>
+    </div>
+
+
+    <div id="the-bar" ng-controller="barControlller">
+
+        <button id="reset-button" ng-click="reset($event)">Start</button>
+        <span id="result-space">  </span>
+        <button id="easy-mode" ng-click="easy($event)">Easy</button>
+        <button id="hard-mode" class="selected" ng-click="hard($event)">Hard</button>
+    
+    </div>
+
+    <div id="color-bar" ng-controller="optionsController">
+
+        <div class="option" ng-click="choose($event)"></div>
+        <div class="option" ng-click="choose($event)"></div>
+        <div class="option" ng-click="choose($event)"></div>
+        <div class="option" ng-click="choose($event)"></div>
+        <div class="option" ng-click="choose($event)"></div>
+        <div class="option" ng-click="choose($event)"></div>
+        
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    
+</body>
+</html>

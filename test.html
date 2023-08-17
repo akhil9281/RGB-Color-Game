@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script src="node_modules\angular\angular.js"></script>
+</head>
+<body>
+    <div ng-controller="MyController">
+        <button ng-click="handleClick($event)">Click me (Button)</button>
+        <a href="#" ng-click="handleClick($event)">Click me (Link)</a>
+        <div style="width: 100px; height: 100px; background-color: lightblue;" ng-click="handleClick($event)">
+            Click me (Div)
+        </div>
+    </div>
+    
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('MyController', function($scope) {
+            $scope.handleClick = function(event) {
+                var clickedElement = event.target;
+                clickedElement.style.backgroundColor = 'red';
+            };
+        });
+    </script>
+</body>
+</html>

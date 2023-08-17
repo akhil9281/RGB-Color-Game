@@ -1,0 +1,84 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #333;
+    margin-top: 1rem;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: rgb(233, 88, 52);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: auto;
+}
+
+h2 {
+    color: aliceblue;
+    background-color: rgb(233, 88, 52);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+}
+
+#the-bar {
+    color: rgb(233, 88, 52);
+    background: aliceblue;
+    text-align: center;
+    height: 25px;
+    justify-content: space-between;
+}
+
+#result-space {
+    width: 40%;
+    display: inline-block;
+}
+
+
+#color-bar {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+}
+.option {
+	width: 30%;
+	background-color: wheat;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+    border-radius: 25%;
+} 
+
+
+.selected {
+    color: aliceblue ;
+    background-color: rgb(233, 88, 52);
+    /* margin: 0;
+    padding: 0; 
+    height: 100%;
+     border: 3px 2px 0px solid red; */
+}
+
+
+button {
+    color: rgb(233, 88, 52);
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    height: 100%;
+
+}
+
+button:hover {
+    color: aliceblue ;
+    background-color: rgb(233, 88, 52);
+    /* margin: 0;
+    padding: 0; */
+    height: 100%;
+    border: 3px 2px 0px solid red;
+}
